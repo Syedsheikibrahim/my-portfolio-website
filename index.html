@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--email js link-->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey:"aOkDAatnJZciroC_V",
+      });
+   })();
+</script>
+     
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <h1>Portfolio</h1>
+            <ul class="nav-links">
+                <li class="nav-link"><a href="#header">Home</a></li>
+                <li class="nav-link"><a href="#section">About ME</a></li>
+                <li class="nav-link"><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburg" onclick="opennavbar()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <div class="side-nav-bar">
+            <p class="x" onclick="closenavbar()"><i class="fa-solid fa-xmark"></i></p>
+            <div class="side-nav-bar-links">
+                <li class="side-nav-link">HOME</li>
+                <li class="side-nav-link">ABOUT</li>
+                <li class="side-nav-link">CONTACT</li>
+            </div>
+        </div>
+
+        <header id="header">
+            <div>
+                <h1>SYED SHEIK IBRAHIM</h1>
+                <p>I'M A <span>WEB DEVELOPER</span></p>
+                <a href="MY RESUME.jpg" download=""><button class="button-54">DOWNLOAD RESUME</button></a>
+                <ul class="icons">
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                </ul>
+            </div>
+            <div class="main">
+                <img src="img-removebg.png" data-aos="fade-down">
+            </div>
+        </header>
+
+        <section id="section">
+            <div class="aboutimage">
+                <img src="img-removebg.png">
+            </div>
+            <div class="detail" data-aos="fade-left">
+                <h3>About Me:</h3>
+                <p><span>Syed Sheik Ibrahim: Front End Developer</span><br>
+                    Syed Sheik Ibrahim is a skilled Front End Developer with a B.Sc. in Computer Science. He excels in
+                    creating intuitive and visually appealing web interfaces using HTML, CSS, and JavaScript. Proficient in
+                    modern front-end frameworks, Syed ensures responsive and dynamic user experiences. His dedication to
+                    continuous learning keeps him updated with the latest industry trends. Syed's passion for web
+                    development and commitment to excellence make him a valuable asset to any team.
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <center>
+                <h2>Projects</h2>
+            </center>
+            <div class="container">
+                <div class="card" data-aos="fade-left">
+                    <img src="ins.png" width="100">
+                    <p>instagram clone project(HTML,CSS)</p>
+                    <a href="https://syedsheikibrahim.github.io/instagram-clone/"><button>Open</button></a>
+                </div>
+                <div class="card" data-aos="fade-right">
+                    <img src="time.png" width="100">
+                    <p>Timer project using(HTML,CSS,JAVASCRIPT)</p>
+                    <a href="https://syedsheikibrahim.github.io/timer-project/"><button>Open</button></a>
+                </div>
+                <div class="card" data-aos="fade-down">
+                    <img src="icons8-tic-tac-toe-55.png" width="100">
+                    <p>Tic tock toe game project using(HTML,CSS,JAVASCRIPT)</p>
+                    <a href="https://syedsheikibrahim.github.io/tic--tac--toe-game/"><button>Open</button></a>
+                </div>
+            </div>
+        </footer>
+
+        <div class="experience">
+            <h5>Education and Qualification</h5>
+            <div class="experience-content">
+                <div class="one" data-aos="fade-left">
+                    <br><span>Education:</span> 10TH<br>
+                    <span>School:</span> Majestic Matriculation School<br>
+                    <span>Percent:</span> 97.6%
+                    <hr>
+                </div>
+                <div class="two" data-aos="fade-right">
+                    <br><span>Education:</span> 12TH<br>
+                    <span>School:</span> Majestic Matriculation School<br>
+                    <span>Percent:</span> 69.75%
+                    <hr>
+                </div>
+                <div class="three" data-aos="fade-down">
+                    <br><span>Education:</span> BSC.CS (Computer Science)<br>
+                    <span>College:</span> Jamal Mohamed College<br>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" >
+            <form data-aos="fade-left">
+                <center>
+                    <h2>Contact Form</h2>
+                </center>
+                <div class="group">
+                    <label for="name">Enter your full name</label>
+                    <input name="name" type="text" placeholder="Name" id="fullName" required>
+                </div>
+                <div class="group">
+                    <label for="email">Enter Email</label>
+                    <input name="email" type="email" placeholder="Email" id="email_id" required>
+                </div>
+                <div class="group">
+                    <label>Message</label>
+                    <textarea name="message" placeholder="Message" id="message" required></textarea>
+                </div>
+                <button type="button" onclick="sendmail()">SUBMIT</button>
+            </form>
+        </div>
+
+        <div class="last">
+            <div class="last-content">
+                <p>&copy; All Rights are reserved 2024</p>
+                <ul class="icons">
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                </ul>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+    </div>
+    
+</body>
+</html>
